@@ -13,5 +13,6 @@
 - (id)initWithTitle:(NSString *)titleString;
 
 @property (readonly) NSString *title;
+@property (weak) UITableView *myTableView;
 
 @end

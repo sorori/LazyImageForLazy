@@ -10,6 +10,7 @@
 #import "FirstViewController.h"
 #import "ASI_Operation_DataSource.h"
 #import "DirectURLDataSource.h"
+#import "ArrayRetainDataSource.h"
 #import "TblData.h"
 #import "ASIHTTPRequest.h"
 #import "ASIDownloadCache.h"
@@ -26,9 +27,9 @@
     
     FirstViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
 
-    DirectURLDataSource *directURLDataSource = [[DirectURLDataSource alloc] init];
-    viewController1.tblViewDataSource = directURLDataSource;
-    viewController1.title = directURLDataSource.title;
+    ArrayRetainDataSource *arrayRetainDataSource = [[ArrayRetainDataSource alloc] init];
+    viewController1.tblViewDataSource = arrayRetainDataSource;
+    viewController1.title = arrayRetainDataSource.title;
     
     FirstViewController *viewController2 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     ASI_Operation_DataSource *asiOperationDatasource = [[ASI_Operation_DataSource alloc] init];
@@ -36,7 +37,7 @@
     viewController2.title = asiOperationDatasource.title;
     
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController2, viewController1];
+    self.tabBarController.viewControllers = @[viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

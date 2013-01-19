@@ -27,6 +27,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    self.tblViewDataSource.myTableView = tblView;
+    
     tblView.dataSource = self.tblViewDataSource;
     tblView.delegate = self.tblViewDataSource;
 }

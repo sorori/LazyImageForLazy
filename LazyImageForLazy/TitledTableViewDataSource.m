@@ -10,7 +10,7 @@
 
 @implementation TitledTableViewDataSource
 
-@synthesize title;
+@synthesize title, myTableView;
 
 - (id)initWithTitle:(NSString *)titleString
 {
