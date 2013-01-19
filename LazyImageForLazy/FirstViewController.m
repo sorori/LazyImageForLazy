@@ -28,7 +28,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     tblView.dataSource = self.tblViewDataSource;
-    self.title = self.tblViewDataSource.title;
+    tblView.delegate = self.tblViewDataSource;
 }
 
 - (void)didReceiveMemoryWarning

@@ -40,6 +40,14 @@
 		8CD977D516AAC7DE005DAF43 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD977D416AAC7DE005DAF43 /* SystemConfiguration.framework */; };
 		8CD977D716AAC816005DAF43 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD977D616AAC816005DAF43 /* MobileCoreServices.framework */; };
 		8CD977D916AAC822005DAF43 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD977D816AAC822005DAF43 /* libz.dylib */; };
+		8CD977DC16AACAD4005DAF43 /* imageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CD977DB16AACAD4005DAF43 /* imageList.plist */; };
+		8CD977DF16AACDA9005DAF43 /* TblData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD977DE16AACDA9005DAF43 /* TblData.m */; };
+		8CD977E216AAD12A005DAF43 /* DirectURLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD977E116AAD12A005DAF43 /* DirectURLDataSource.m */; };
+		8CD977F316AAD4B3005DAF43 /* ImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD977F016AAD4B1005DAF43 /* ImageOperation.m */; };
+		8CD977F416AAD4B3005DAF43 /* UIImageViewOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD977F216AAD4B2005DAF43 /* UIImageViewOperation.m */; };
+		8CD977F516AAD543005DAF43 /* UIImageViewOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD977F216AAD4B2005DAF43 /* UIImageViewOperation.m */; };
+		8CD977F616AAD549005DAF43 /* ImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD977F016AAD4B1005DAF43 /* ImageOperation.m */; };
+		8CD977F816AADBA1005DAF43 /* psy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CD977F716AADBA1005DAF43 /* psy.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +115,16 @@
 		8CD977D416AAC7DE005DAF43 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8CD977D616AAC816005DAF43 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8CD977D816AAC822005DAF43 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8CD977DB16AACAD4005DAF43 /* imageList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageList.plist; sourceTree = "<group>"; };
+		8CD977DD16AACDA9005DAF43 /* TblData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TblData.h; sourceTree = "<group>"; };
+		8CD977DE16AACDA9005DAF43 /* TblData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TblData.m; sourceTree = "<group>"; };
+		8CD977E016AAD129005DAF43 /* DirectURLDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectURLDataSource.h; sourceTree = "<group>"; };
+		8CD977E116AAD12A005DAF43 /* DirectURLDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectURLDataSource.m; sourceTree = "<group>"; };
+		8CD977EF16AAD4B1005DAF43 /* ImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageOperation.h; sourceTree = "<group>"; };
+		8CD977F016AAD4B1005DAF43 /* ImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageOperation.m; sourceTree = "<group>"; };
+		8CD977F116AAD4B2005DAF43 /* UIImageViewOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewOperation.h; sourceTree = "<group>"; };
+		8CD977F216AAD4B2005DAF43 /* UIImageViewOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewOperation.m; sourceTree = "<group>"; };
+		8CD977F716AADBA1005DAF43 /* psy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = psy.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,8 +201,18 @@
 				8CD977AD16AAC002005DAF43 /* TitledTableViewDataSource.m */,
 				8CD977AF16AAC2E3005DAF43 /* ASI_Operation_DataSource.h */,
 				8CD977B016AAC2E3005DAF43 /* ASI_Operation_DataSource.m */,
+				8CD977E016AAD129005DAF43 /* DirectURLDataSource.h */,
+				8CD977E116AAD12A005DAF43 /* DirectURLDataSource.m */,
 				8CD9777916AABAE6005DAF43 /* first.png */,
 				8CD9777B16AABAE6005DAF43 /* first@2x.png */,
+				8CD977F716AADBA1005DAF43 /* psy.jpg */,
+				8CD977DD16AACDA9005DAF43 /* TblData.h */,
+				8CD977DE16AACDA9005DAF43 /* TblData.m */,
+				8CD977EF16AAD4B1005DAF43 /* ImageOperation.h */,
+				8CD977F016AAD4B1005DAF43 /* ImageOperation.m */,
+				8CD977F116AAD4B2005DAF43 /* UIImageViewOperation.h */,
+				8CD977F216AAD4B2005DAF43 /* UIImageViewOperation.m */,
+				8CD977DA16AACAA3005DAF43 /* Resources */,
 				8CD977B216AAC7B3005DAF43 /* ASIHTTP */,
 				8CD9776516AABAE6005DAF43 /* Supporting Files */,
 			);
@@ -251,6 +279,14 @@
 				8CD977C816AAC7B3005DAF43 /* Reachability.m */,
 			);
 			path = ASIHTTP;
+			sourceTree = "<group>";
+		};
+		8CD977DA16AACAA3005DAF43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CD977DB16AACAD4005DAF43 /* imageList.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +367,8 @@
 				8CD9777A16AABAE6005DAF43 /* first.png in Resources */,
 				8CD9777C16AABAE6005DAF43 /* first@2x.png in Resources */,
 				8CD9778616AABAE6005DAF43 /* FirstViewController.xib in Resources */,
+				8CD977DC16AACAD4005DAF43 /* imageList.plist in Resources */,
+				8CD977F816AADBA1005DAF43 /* psy.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +403,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD977F616AAD549005DAF43 /* ImageOperation.m in Sources */,
+				8CD977F516AAD543005DAF43 /* UIImageViewOperation.m in Sources */,
 				8CD9776B16AABAE6005DAF43 /* main.m in Sources */,
 				8CD9776F16AABAE6005DAF43 /* AppDelegate.m in Sources */,
 				8CD9777816AABAE6005DAF43 /* FirstViewController.m in Sources */,
@@ -379,6 +419,8 @@
 				8CD977CF16AAC7B3005DAF43 /* ASIInputStream.m in Sources */,
 				8CD977D016AAC7B3005DAF43 /* ASINetworkQueue.m in Sources */,
 				8CD977D116AAC7B3005DAF43 /* Reachability.m in Sources */,
+				8CD977DF16AACDA9005DAF43 /* TblData.m in Sources */,
+				8CD977E216AAD12A005DAF43 /* DirectURLDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +429,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CD9779E16AABAE6005DAF43 /* LazyImageForLazyTests.m in Sources */,
+				8CD977F316AAD4B3005DAF43 /* ImageOperation.m in Sources */,
+				8CD977F416AAD4B3005DAF43 /* UIImageViewOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ASI_Operation_DataSource.h
+//  DirectURLDataSource.h
 //  LazyImageForLazy
 //
 //  Created by porori on 13. 1. 19..
@@ -8,8 +8,7 @@
 
 #import "TitledTableViewDataSource.h"
 #import "TblData.h"
-#import "UIImageViewOperation.h"
 
-@interface ASI_Operation_DataSource : TitledTableViewDataSource
+@interface DirectURLDataSource : TitledTableViewDataSource
 
 @end

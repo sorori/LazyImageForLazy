@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "FirstViewController.h"
 #import "ASI_Operation_DataSource.h"
+#import "DirectURLDataSource.h"
+#import "TblData.h"
+#import "ASIHTTPRequest.h"
+#import "ASIDownloadCache.h"
 
 @implementation AppDelegate
 
@@ -17,12 +21,22 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    [ASIHTTPRequest setDefaultCache:[ASIDownloadCache sharedCache]];
+    [[ASIDownloadCache sharedCache] clearCachedResponsesForStoragePolicy:ASICachePermanentlyCacheStoragePolicy];
+    
     FirstViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+
+    DirectURLDataSource *directURLDataSource = [[DirectURLDataSource alloc] init];
+    viewController1.tblViewDataSource = directURLDataSource;
+    viewController1.title = directURLDataSource.title;
+    
+    FirstViewController *viewController2 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     ASI_Operation_DataSource *asiOperationDatasource = [[ASI_Operation_DataSource alloc] init];
-    viewController1.tblViewDataSource = asiOperationDatasource;
+    viewController2.tblViewDataSource = asiOperationDatasource;
+    viewController2.title = asiOperationDatasource.title;
     
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1];
+    self.tabBarController.viewControllers = @[viewController2, viewController1];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TitledTableViewDataSource : NSObject <UITableViewDataSource>
+@interface TitledTableViewDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 - (id)initWithTitle:(NSString *)titleString;
 

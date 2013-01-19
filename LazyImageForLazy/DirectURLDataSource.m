@@ -1,18 +1,18 @@
 //
-//  ASI_Operation_DataSource.m
+//  DirectURLDataSource.m
 //  LazyImageForLazy
 //
 //  Created by porori on 13. 1. 19..
 //  Copyright (c) 2013년 porori. All rights reserved.
 //
 
-#import "ASI_Operation_DataSource.h"
+#import "DirectURLDataSource.h"
 
-@implementation ASI_Operation_DataSource
+@implementation DirectURLDataSource
 
 - (id)init
 {
-    self = [super initWithTitle:@"ASIOP"];
+    self = [super initWithTitle:@"Direct"];
     
     return self;
 }
@@ -39,9 +39,7 @@
     NSLog(@"url: %@", url);
     
     cell.textLabel.text = @"test";
-    // Dummy icon //
-    cell.imageView.image = [UIImage imageNamed:@"psy.jpg"];
-    [cell.imageView setImageWithURL:[NSURL URLWithString:url]];
+    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]];
     
     return cell;
 }
