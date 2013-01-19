@@ -36,7 +36,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MyIdentifier"];
     }
     NSString *url = [[TblData sharedData].data objectAtIndex:indexPath.row];
-    NSLog(@"url: %@", url);
     
     cell.textLabel.text = @"test";
     cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]];
