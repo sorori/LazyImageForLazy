@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TitledTableViewDataSource.h"
 
 @interface FirstViewController : UIViewController
+{
+
+}
+@property (weak, nonatomic) IBOutlet UITableView *tblView;
+@property (strong) TitledTableViewDataSource *tblViewDataSource;
 
 @end

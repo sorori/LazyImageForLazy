@@ -8,18 +8,16 @@
 
 #import "FirstViewController.h"
 
-@interface FirstViewController ()
-
-@end
-
 @implementation FirstViewController
+
+@synthesize tblView;
+@synthesize tblViewDataSource;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        //
     }
     return self;
 }
@@ -28,6 +26,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    tblView.dataSource = self.tblViewDataSource;
+    self.title = self.tblViewDataSource.title;
 }
 
 - (void)didReceiveMemoryWarning
